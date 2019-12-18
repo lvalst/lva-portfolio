@@ -37,6 +37,7 @@ html, body {
     width:100%;
     z-index: 1;
     background-color:rgb(61, 61, 61);
+    max-height: 15rem;
 }
 header .container {
     display:flex;
