@@ -47,7 +47,6 @@ header .container {
     width:100%;
 }
 .container h1 {
-    font-size: 5rem; 
     white-space:no-wrap;
 }
 .container .navBar {
@@ -58,12 +57,9 @@ header .container {
     width:100%;
 }
 .container .navBar li {
-    font-size:4rem;
     margin-left:-40px;
-    margin-top:20px;
-    padding:50px 0;
-    border: 5px solid white;
-    border-radius: 20px;
+    margin-top:10px;
+    padding:10px 0;
 }
 /* end header */
 
@@ -79,11 +75,6 @@ header .container {
     opacity: .8;
     margin: 2rem 0;
     padding:2rem 3rem;
-    border-radius: 30px;
-    font-size: 3.25rem;
-}
-.containCont h1 {
-    font-size: 3.75rem;
 }
 .containCont p {
     text-align: left;
@@ -116,15 +107,11 @@ header .container {
 }
 .screenshot ul li {
     color: blue;
-    margin:0 1.5rem;
+    text-align:center;
 }
 
-.portfolio h2 {
-    font-size: 3.25rem;
-}
 .langSymbols {
     margin:auto;
-    padding: 0 50px;
 }
 .langSymbols ul{
     display:flex;

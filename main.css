@@ -124,3 +124,165 @@ footer {
     padding-bottom: 4rem;
     padding-top: 0;
 }
+/* 
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    margin:0;
+    padding:0;
+}
+.list {
+    list-style:none;
+}
+.content {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} */
+/* background image orientation */
+/* .background img{
+    position:fixed;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+} */
+/* background image end */
+
+/* begin header */
+/* 
+.content header{
+    width:100%;
+    z-index:1;
+    background-color:rgb(61, 61, 61);
+}
+header .container {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    width:100%;
+}
+.container h1 {
+    font-size: 5rem; 
+    white-space:no-wrap;
+}
+.container .navBar {
+    width:100%;
+}
+.container .navBar ul {
+    text-align:center;
+    width:100%;
+}
+.container .navBar li {
+    font-size:4rem;
+    margin-left:-40px;
+    margin-top:20px;
+    padding:50px 0;
+    border: 5px solid white;
+    border-radius: 20px;
+} */
+/* end header */
+
+/* begin innerContent general*/
+/* .innerContent {
+    display:relative;
+    width:90%; 
+    text-align: center;
+    margin-top:1rem;
+}
+.containCont {
+    background-color: white;
+    opacity: .8;
+    margin: 2rem 0;
+    padding:2rem 3rem;
+    border-radius: 30px;
+    font-size: 3.25rem;
+}
+.containCont h1 {
+    font-size: 3.75rem;
+}
+.containCont p {
+    text-align: left;
+} */
+/* end innercontent general */
+
+/* about info section */
+
+
+/* end about */
+
+/* portfolio info section */
+/* .portfolio img {
+    padding: 20px;
+    margin:auto;
+}
+.portfolio .screenshot {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    width:100%;
+    height:100%;
+}
+.screenshot ul {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: auto;
+}
+.screenshot ul li {
+    color: blue;
+    margin:0 1.5rem;
+}
+
+.portfolio h2 {
+    font-size: 3.25rem;
+}
+.langSymbols {
+    margin:auto;
+    padding: 0 50px;
+}
+.langSymbols ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin:0;
+}
+svg {
+    width:1em;
+    height:1em;
+} */
+/* end portfolio */
+
+/* contact info section */
+/* .contact h1 {
+    padding-bottom: .5rem;
+}
+.overall {
+    text-align: left;
+}
+.overall li {
+    margin-bottom: .5rem;
+} */
+/* end contact */
+
+/* footer */
+/* footer {
+    display:border-box;
+    width:100%;
+    font-size: .8rem;
+    padding-bottom: 4rem;
+    padding-top: 0;
+} */
