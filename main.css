@@ -10,7 +10,14 @@ html, body {
 .list {
     list-style:none;
 }
-/*background*/
+.content {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* background image orientation */
 .background img{
     position:fixed;
     right:0;
@@ -21,149 +28,13 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
-}
-/* end background */
-
-/* begin header */
-.content {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.content header{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index: 1;
-    background-color:rgb(61, 61, 61);
-}
-header .container {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    max-height:7rem;
-    margin-bottom: .5rem;
-}
-.container h1 {
-    width:100%;
-    font-size: 2.25rem; 
-    white-space:no-wrap;
-}
-.container .navBar {
-    width:100%;
-    font-size:1.5rem;
-    white-space:no-wrap;
-}
-.container .navBar ul {
-    list-style:none;
-    display:flex;
-    justify-content: space-evenly;
-    margin: auto;
-    width:100%;
-    height:100%;
-}
-.container .navBar ul li {
-    width: 33%;
-}
-/* end header */
-
-/* begin innerContent general*/
-.innerContent {
-    display:relative;
-    width:80%; 
-    text-align: center;
-    margin-top:8.2rem;
-}
-.containCont {
-    background-color: lightblue;
-    opacity: .8;
-    margin: 2rem 0;
-    padding:2rem 2.5rem;
-    border-radius: 30px;
-    font-size: 1rem;
-}
-.containCont h1 {
-    font-size: 1.5rem;
-}
-.containCont p {
-    text-align: left;
-}
-/* end innercontent general */
-
-/* about info section */
-
-
-/* end about */
-
-/* portfolio info section */
-
-/* end portfolio */
-
-/* contact info section */
-.contact h1 {
-    padding-bottom: .5rem;
-}
-.overall {
-    text-align: left;
-}
-.overall li {
-    margin-bottom: .5rem;
-}
-/* end contact */
-
-/* footer */
-footer {
-    display:border-box;
-    width:100%;
-    font-size: .8rem;
-    padding-bottom: 4rem;
-    padding-top: 0;
-}
-/* 
-* {
-    box-sizing: border-box;
-}
-html, body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:20px;
-    margin:0;
-    padding:0;
-}
-.list {
-    list-style:none;
-}
-.content {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-} */
-/* background image orientation */
-/* .background img{
-    position:fixed;
-    right:0;
-    bottom:0;
-    min-width:100%;
-    min-height:100%;
-    z-index: -1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-} */
+} 
 /* background image end */
 
 /* begin header */
-/* 
 .content header{
     width:100%;
     z-index:1;
-    background-color:rgb(61, 61, 61);
 }
 header .container {
     display:flex;
@@ -191,11 +62,11 @@ header .container {
     padding:50px 0;
     border: 5px solid white;
     border-radius: 20px;
-} */
+} 
 /* end header */
 
 /* begin innerContent general*/
-/* .innerContent {
+.innerContent {
     display:relative;
     width:90%; 
     text-align: center;
@@ -214,7 +85,7 @@ header .container {
 }
 .containCont p {
     text-align: left;
-} */
+}
 /* end innercontent general */
 
 /* about info section */
@@ -223,7 +94,7 @@ header .container {
 /* end about */
 
 /* portfolio info section */
-/* .portfolio img {
+.portfolio img {
     padding: 20px;
     margin:auto;
 }
@@ -245,7 +116,6 @@ header .container {
     color: blue;
     margin:0 1.5rem;
 }
-
 .portfolio h2 {
     font-size: 3.25rem;
 }
@@ -263,11 +133,11 @@ header .container {
 svg {
     width:1em;
     height:1em;
-} */
+}
 /* end portfolio */
 
 /* contact info section */
-/* .contact h1 {
+.contact h1 {
     padding-bottom: .5rem;
 }
 .overall {
@@ -275,14 +145,119 @@ svg {
 }
 .overall li {
     margin-bottom: .5rem;
-} */
+} 
 /* end contact */
 
 /* footer */
-/* footer {
+footer {
     display:border-box;
     width:100%;
-    font-size: .8rem;
     padding-bottom: 4rem;
     padding-top: 0;
+} 
+/* end footer */
+
+/* @media only screen and (max-width: 550px){
+    .innerContent {
+        display:none;
+    }
 } */
+@media only screen and (min-width:320px){
+    .container h1 {
+        margin:0;
+        width: 100%;
+        position: fixed; 
+        left: 50%;
+        margin-left: -50%;
+        padding:40px 0;
+        top: 0;
+        font-size: 5rem; 
+        white-space:no-wrap;
+        background-color:rgb(61, 61, 61);
+        border: 5px solid white;
+        border-radius: 20px;
+    
+    }
+    .container .navBar {
+        width:100%;
+        margin-top: 12rem;
+    }
+    .container .navBar ul {
+        text-align:center;
+        width:100%;
+        
+    }
+    .container .navBar li {
+        font-size:4rem;
+        margin-left:-40px;
+        margin: 18% 0 18% -40px;
+        padding:50px 0;
+        border: 5px solid white;
+        border-radius: 20px;
+        background-color:rgb(61, 61, 61);
+    }
+    .innerContent {
+        width:90%; 
+    }
+    .innercontent h1 {
+        font-size: 2.75rem;
+    }
+    .innerContent h2 {
+        font-size: 2.5rem;
+    }
+    .innerContent p {
+        font-size: 2.25rem;
+    }
+    .containCont {
+        margin: 2rem 0;
+        padding:2rem 2.5rem;
+        border-radius: 30px;
+    }
+    .contact h1 {
+        padding-bottom: .5rem;
+    }
+    .overall {
+        text-align: left;
+    }
+    .overall li {
+        margin-bottom: .5rem;
+    }
+    footer {
+        font-size: 3em;
+        padding-bottom: 4rem;
+    } 
+}
+@media only screen and (min-width:540px) {
+    header .container {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        color:white;
+    }
+    .container h1 {
+        width:100%;
+        font-size: 4rem; 
+        height:6rem;
+        line-height:6rem;
+        white-space:nowrap;
+    }
+    .container .navBar {
+        width:100%;
+        font-size:3rem;
+        height:3.75rem;
+        line-height:3.75rem;
+        white-space:no-wrap;
+    }
+    .container .navBar ul {
+        list-style:none;
+        display:flex;
+        justify-content: space-evenly;
+        margin: auto;
+        width:100%;
+        height:100%;
+    }
+    .container .navBar ul li {
+        width: 33%;
+    }
+}
