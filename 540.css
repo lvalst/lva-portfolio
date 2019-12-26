@@ -1,0 +1,68 @@
+h1 {
+    font-size: 1.75rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1rem;
+}
+.list {
+    font-size:1rem;
+}
+
+.content header{
+    background-color:rgb(61, 61, 61);
+    opacity: .9;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius: 0 0 20px 20px;
+}
+.container .navBar ul {
+    display: flex;
+}
+.container .navBar li {
+    width: 33%;
+    font-size: 1.2rem;
+}
+.container .navBar li:hover {
+    color: cadetblue;
+    opacity: .8;
+}
+
+.innerContent {
+    width:85%; 
+}
+.containCont {
+    margin: 1.5rem 0;
+    padding:2rem 3rem;
+}
+
+.beginRamble {
+    margin-bottom:-1.2rem;
+}
+pre {
+    display: flex;
+    flex-direction: column;
+    white-space: pre-wrap; 
+    margin: auto;
+    padding:0;
+    text-align:left;
+}
+code {
+    display: block;
+    margin:0 auto;
+}
+.endRamble {
+    margin-top:-.5rem;
+}
+
+footer {
+    font-size: .8rem;
+}

@@ -42,30 +42,17 @@ header .container {
     justify-content: center;
     align-items: center;
     color:white;
-    width:100%;
-}
-.container h1 {
-    font-size: 5rem; 
-    white-space:no-wrap;
 }
 .container .navBar {
     width:100%;
 }
-.container .navBar ul {
-    text-align:center;
-    width:100%;
-}
-.container .navBar li {
-    font-size:4rem;
-    margin-left:-40px;
-    margin-top:20px;
-    padding:50px 0;
-    border: 5px solid white;
-    border-radius: 20px;
-} 
+
 /* end header */
 
 /* begin innerContent general*/
+/* .portfolio, .contact {
+    display: none;
+} */
 .innerContent {
     display:relative;
     width:90%; 
@@ -76,12 +63,8 @@ header .container {
     background-color: white;
     opacity: .8;
     margin: 2rem 0;
-    padding:2rem 3rem;
+    padding:2rem 2.5rem;
     border-radius: 30px;
-    font-size: 3.25rem;
-}
-.containCont h1 {
-    font-size: 3.75rem;
 }
 .containCont p {
     text-align: left;
@@ -89,8 +72,10 @@ header .container {
 /* end innercontent general */
 
 /* about info section */
-
-
+.ramble {
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.5rem;
+}
 /* end about */
 
 /* portfolio info section */
@@ -162,43 +147,41 @@ footer {
         display:none;
     }
 } */
-@media only screen and (min-width:320px){
+@media only screen and (min-width:300px){
     .container h1 {
         margin:0;
         width: 100%;
         position: fixed; 
         left: 50%;
         margin-left: -50%;
-        padding:40px 0;
+        padding:35px 0;
         top: 0;
-        font-size: 5rem; 
-        white-space:no-wrap;
         background-color:rgb(61, 61, 61);
-        border: 5px solid white;
-        border-radius: 20px;
-    
+        border-radius: 0 0 20px 20px;
+        font-size: 1.75rem;
     }
     .container .navBar {
-        width:100%;
-        margin-top: 12rem;
+        padding-top: 3.5rem;
     }
     .container .navBar ul {
         text-align:center;
         width:100%;
-        
     }
     .container .navBar li {
-        font-size:4rem;
-        margin-left:-40px;
         margin: 18% 0 18% -40px;
-        padding:50px 0;
-        border: 5px solid white;
-        border-radius: 20px;
         background-color:rgb(61, 61, 61);
+        border-radius: 30px;
+        padding:40px 0;
+        font-size: 1.5rem;
     }
-    .innerContent {
-        width:90%; 
+    .container .navBar li:hover {
+        border: 3px solid white; 
+        color:red;
     }
+    
+    /* .about {
+        display: none;
+    } */
     .innercontent h1 {
         font-size: 2.75rem;
     }
@@ -208,56 +191,77 @@ footer {
     .innerContent p {
         font-size: 2.25rem;
     }
-    .containCont {
-        margin: 2rem 0;
-        padding:2rem 2.5rem;
-        border-radius: 30px;
-    }
-    .contact h1 {
-        padding-bottom: .5rem;
-    }
-    .overall {
-        text-align: left;
-    }
-    .overall li {
-        margin-bottom: .5rem;
-    }
     footer {
-        font-size: 3em;
-        padding-bottom: 4rem;
-    } 
+        font-size: 3rem;
+    }  
 }
-@media only screen and (min-width:540px) {
-    header .container {
+@media only screen and (min-width:540px){
+    h1 {
+        font-size: 1.75rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .list {
+        font-size:1rem;
+    }
+    
+    .content header{
+        background-color:rgb(61, 61, 61);
+        opacity: .9;
         display:flex;
         flex-direction:column;
         justify-content: center;
         align-items: center;
         color:white;
-    }
-    .container h1 {
-        width:100%;
-        font-size: 4rem; 
-        height:6rem;
-        line-height:6rem;
-        white-space:nowrap;
-    }
-    .container .navBar {
-        width:100%;
-        font-size:3rem;
-        height:3.75rem;
-        line-height:3.75rem;
-        white-space:no-wrap;
+        border-radius: 0 0 20px 20px;
     }
     .container .navBar ul {
-        list-style:none;
-        display:flex;
-        justify-content: space-evenly;
-        margin: auto;
-        width:100%;
-        height:100%;
+        display: flex;
     }
-    .container .navBar ul li {
+    .container .navBar li {
         width: 33%;
+        font-size: 1.2rem;
+    }
+    .container .navBar li:hover {
+        color: cadetblue;
+        opacity: .8;
+    }
+    
+    .innerContent {
+        width:85%; 
+    }
+    .containCont {
+        margin: 1.5rem 0;
+        padding:2rem 3rem;
+    }
+    
+    .beginRamble {
+        margin-bottom:-1.2rem;
+    }
+    pre {
+        display: flex;
+        flex-direction: column;
+        white-space: pre-wrap; 
+        margin: auto;
+        padding:0;
+        text-align:left;
+    }
+    code {
+        display: block;
+        margin:0 auto;
+    }
+    .endRamble {
+        margin-top:-.5rem;
+    }
+    
+    footer {
+        font-size: .8rem;
     }
 }
