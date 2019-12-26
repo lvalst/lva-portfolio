@@ -15,7 +15,7 @@ html, body {
     text-align: center;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 h2 {
     font-size: 1.5rem;
@@ -30,6 +30,7 @@ p {
     list-style:none;
     font-size:1rem;
 }
+
 /* background image orientation */
 .background img{
     position:fixed;
@@ -49,11 +50,13 @@ p {
     width:100%;
     z-index:1;
     background-color:rgb(61, 61, 61);
+    opacity: .9;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
     color:white;
+    border-radius: 0 0 20px 20px;
 }
 header .container {
     width:100%;
@@ -68,12 +71,15 @@ header .container {
     width: 33%;
     font-size: 1.2rem;
 }
-:hover .container .navBar li {
+.container .navBar li:hover {
     color: cadetblue;
 }
 /* end header */
 
 /* begin innerContent general*/
+/* .portfolio, .contact {
+    display: none;
+} */
 .innerContent {
     display:relative;
     width:85%; 
@@ -93,6 +99,32 @@ header .container {
 /* end innercontent general */
 
 /* about info section */
+pre {
+    display: flex;
+    flex-direction: column;
+    white-space: pre-wrap; 
+    margin: auto;
+    padding:0;
+    text-align:left;
+}
+.beginRamble {
+    margin-bottom:-1.2rem;
+}
+.beginRamble span {
+    font-weight: bold;
+}
+.endRamble {
+    margin-top:-.5rem;
+}
+code {
+    display: block;
+    margin:0 auto;
+}
+.ramble {
+    font-family: Arial, Helvetica, sans-serif; 
+    line-height: 1.5rem;
+}
+
 
 
 /* end about */
