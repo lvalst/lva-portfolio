@@ -7,6 +7,10 @@ html, body {
     margin:0;
     padding:0;
 }
+a {
+    text-decoration: none;
+    color:inherit;
+}
 ul {
     list-style:none;
 }
@@ -46,25 +50,23 @@ div[role=header].container {
     color:white;
     width:100%;
 }
-.container h1 {
+h1, ul>.container {
     background-color:rgb(61, 61, 61);
-    width:100%
 }
-.container .navBar {
+.container.navBar {
     width:100%;
-}
-.navBar ul li {
-    background-color:rgb(61, 61, 61);
+    margin:0 auto;
+    padding:0;
 }
 li button {
-    background-color: inherit;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 1.25rem 0;
     transition: 0.3s;
-    font-size: 1.2rem;
     color:white;
+    border-radius: 30px;
+    margin:1rem 0;
   }
 /* end header */
 
@@ -72,56 +74,68 @@ li button {
 
 .innerContent {
     display: relative;
-    width:90%; 
     text-align: center;
-    margin-top:1rem;
+    margin:0 auto;
+    padding:0;
 }
 .containCont {
     opacity: .85;
-    margin: 2rem 0;
+    margin: 0;
     padding:2rem 2.5rem;
     border-radius: 30px;
-    color:rgb(61, 61, 61);
+}
+.containCont p {
+    text-align:left;
+    align-content: center;
 }
 
 /* end innercontent general */
 
 /* portfolio info section */
-.portContent img {
-    padding: 20px;
-    margin:auto;
-}
-.portfolio .screenshot {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: auto;
+.portContent {
+    background-color:yellow;
+    text-align:left;
     width:100%;
-    height:100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.screenshot {
+    margin-bottom:0;
+}
+.screenshot img {
+    padding:.5rem 0;
+    margin:0 auto;
 }
 .screenshot ul {
+    padding:0;
+    opacity:.8;
+    color:ivory;
     display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-    margin: auto;
 }
 .screenshot ul li {
-    color: blue;
-    margin:0 1.5rem;
-}
-.portfolio h2 {
-    font-size: 3.25rem;
-}
-.langSymbols {
-    margin:auto;
-    padding: 0 50px;
-}
-.langSymbols ul{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+    background-color:blue;
+    margin:0 auto;
     padding: 0;
-    margin:0;
+    text-align:center;
+}
+h2 {
+    padding:.25rem 0;
+    margin:.25rem auto;
+    background-color:red;
+}
+
+.langSymbols ul{
+    width:100%;
+    display:flex;
+    margin: .5rem auto;
+    align-items:center;
+    justify-content:space-between;
+}
+.langSymbols ul li {
+    display:flex;
 }
 svg {
     width:1em;
@@ -143,9 +157,9 @@ svg {
 
 /* footer */
 footer {
-    margin-left:-1.7rem;
     padding:0;
     text-align:center;
+    bottom:1rem;
 } 
 /* end footer */
 
@@ -155,27 +169,13 @@ footer {
     }
     .mobile {
         display:initial;
+        color:ivory;
         width:100%;
     }
-    .mobile .innercontent h1 {
-        font-size: 2.75rem;
+    .innerContent {
+        margin:2rem 0;
     }
-    .mobile .innerContent h2 {
-        font-size: 1rem;
-    }
-    .mobile .innerContent h3 {
-        font-size: 2rem;
-    }
-    .mobile .innerContent p, section{
-        font-size: 1.3rem;
-    }
-    .mobile li button {
-        font-size:1.55rem;
-    }
-    footer {
-        font-size: 1.5rem;
-    } 
-    .mobile .container h1 {
+    .container h1 {
         margin:0 0 -1.5rem;
         position: fixed; 
         left: 50%;
@@ -186,24 +186,23 @@ footer {
         border-radius: 0 0 12px 12px;
         font-size: 1.8rem;
     }
-    .mobile .container .navBar {
+    .container .navBar {
         padding-top: 5rem;
     }
-    .mobile .container .navBar ul {
+    .container ul {
         text-align:center;
-        width:100%;
     }
-    .mobile .container .navBar li {
-        margin:3rem auto 0;
+    .accordian {
+        background-color:rgb(61, 61, 61);;
+        width:95%;
+        margin:1rem auto;
         opacity: .9;
         z-index:-1;
         border-radius: 30px;
-        padding:30px 0;
         font-size: 1.75rem;
-        width: 90%;
     }
     
-    .mobile .navBar li:hover {
+    .accordian:hover {
         opacity: 1;
     }
     .panel {
@@ -211,12 +210,32 @@ footer {
         overflow:hidden;
         margin-bottom:0;
     }
-    .mobile .containCont p {
-        text-align: left;
-        color:ivory;
-        margin-top: -2rem;
-        line-height: initial;
+
+    .containCont {
+        background-color:rgb(61, 61, 61);
+        width:90%;
+        margin:0 auto;
     }
+    .innercontent h1 {
+        font-size: 2.75rem;
+    }
+    .innerContent h2 {
+        font-size: 1rem;
+    }
+    .innerContent h3 {
+        font-size: 2rem;
+    }
+    .innerContent p, section{
+        font-size: 1.3rem;
+    }
+    p section>.containCont {
+        text-align: left;
+        margin:auto;
+    }
+    
+    footer {
+        font-size: 1.1rem;
+    } 
 }
 
 @media only screen and (min-width:540px){
@@ -260,7 +279,6 @@ footer {
     }
     .desktop .innerContent h2 {
         font-size: 1.35em;
-        text-align: center;
     }
     .desktop .innerContent p{
         font-size: 1em;
@@ -292,6 +310,7 @@ footer {
         flex-direction:column;
         align-content: center;
     }
+   
 
    footer {
         font-size: .95em;
