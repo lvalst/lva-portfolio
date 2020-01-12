@@ -1,17 +1,4 @@
 
-// if (matchMedia) {
-//     const mq = window.matchMedia("(min-width:540px)");
-//     mq.addListener(WidthChange);
-//     WidthChange(mq);
-// }
-// function WidthChange(mq) {
-//     if (mq.matches) {
-//       $(openTab);
-//     } else {
-//       $(accordian);
-//     }
-// }
-
 $(document).ready(function() {
   // This will fire when document is ready:
   $(window).resize(function() {
@@ -27,6 +14,7 @@ $(document).ready(function() {
 });
 
 function openTab(event, navName) {
+    //opens About as tab when page >540 px loads
     document.getElementById('default').click();
     // Declare all variables
     var i, containCont, navLink;
