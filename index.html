@@ -10,14 +10,14 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body>
+<body onload="document.getElementById('default').click();">
     <div class="content">
         <!-- background image DO NOT CHANGE -->
-        <div class="background">
+        <!-- <div class="background">
             <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/colorful-of-dahlia-pink-flower-in-beautiful-garden-royalty-free-image-825886130-1554743243.jpg?crop=1.00xw:0.753xh;0,0.247xh&resize=768:*"
                 alt="pink flower">
-        </div>
-        <div class="mobile">
+        </div> -->
+        <div class="mobile flex">
             <!-- header and navbar -->
             <div role="header" class="mobile container">
                 <h1 class="mobile name">Lauren Van Allen</h1>
@@ -26,14 +26,22 @@
                         <li><button class="mobile accordian">About</button>
                             <div class="mobile panel containCont">
                                 <h1>Personal Statement</h1>
-                                <p> I am a Front-End Web Developer based out of Nashville who specializes in Html, CSS, Javascript, and JQuery.</p>
-                                <p>In my free time I enjoy writing fanfiction, endless fiddling with existing art and code projects, and hanging out on the apartment balcony with my husband and three cats.</p>
+                                <p> I am a Front-End Web Developer based out of Nashville who specializes in Html, CSS,
+                                    Javascript, and JQuery.</p>
+                                <p>In my free time I enjoy writing fanfiction, endless fiddling with existing art and
+                                    code projects, and hanging out on the apartment balcony with my husband and three
+                                    cats.</p>
                                 <p> My favorite aspect of coding is that <em>Ah-hah!</em> moment:
                                     <div class="mobile too">
-                                        <p>The very second you find that single misplaced piece of the puzzle and it was so freaking simple, and you want to, <em>need</em> to scream and throw something—
+                                        <p>The very second you find that single misplaced piece of the puzzle and it was
+                                            so freaking simple, and you want to, <em>need</em> to scream and throw
+                                            something—
                                         </p>
-                                        <p>But then you see, your answer spawned interesting <em>new</em> problems and  you’re enthralled again and ignoring the aching of your shoulders, the itching of your eyes, the growl of your stomach,</p>
-                                        <p>The rest of the world fades to nothing, leaving only your monitor, keyboard, fingers...
+                                        <p>But then you see, your answer spawned interesting <em>new</em> problems and
+                                            you’re enthralled again and ignoring the aching of your shoulders, the
+                                            itching of your eyes, the growl of your stomach,</p>
+                                        <p>The rest of the world fades to nothing, leaving only your monitor, keyboard,
+                                            fingers...
                                         </p>
                                         <p>...just me?</p>
                                     </div>
@@ -103,14 +111,15 @@
                                     <p class="mobile quizDescrip">
                                         The Brief Biology Quiz asks five high-school biology questions in the format of
                                         a scored single
-                                        multiple-choice question and, on submission, the correct answer and possible
-                                        added point. At the
+                                        multiple-choice question and, on submission, displays the correct answer and
+                                        possible
+                                        added point.</p>
+                                    <p>At the
                                         appearance of the answer, the user is prompted to click for the next question
                                         and this format
                                         continues until the results page. Upon completion, the site shows the user’s
                                         total score, the
-                                        number
-                                        of questions, and offers a button to retry the quiz from the beginning.
+                                        number of questions, and offers a button to retry the quiz from the beginning.
                                     </p>
                                 </section>
                             </div>
@@ -131,22 +140,21 @@
                             </div>
                         </li>
                     </ul>
-                    </section>
+                </p>
             </div>
         </div>
         <!-- end mobile version w/ accordian style tabs -->
         <!-- begin desktop version with plain tabs -->
-        <div class="desktop">
+        <div class="desktop flex">
             <!-- header and navbar -->
             <div role="header" class="desktop container">
                 <h1 class="desktop name">Lauren Van Allen</h1>
                 <section class="desktop navBar">
                     <ul id="desktop tabs">
-                        <li><button class="desktop navLink" onclick="openTab(event, 'About')"
-                                id="default">About</button>
+                        <li><button class="desktop navLink" id="default" onclick="openTab(event, 'About')">About</button>
                         </li>
                         <li><button class="desktop navLink" onclick="openTab(event, 'Projects')">Projects</button></li>
-                        <li><button class="desktop navLink" onclick="openTab(event, 'Contact')">Contact</button></li>
+                        <li><button class="desktop navLink" onclick="openTab(event,  'Contact')">Contact</button></li>
                     </ul>
                 </section>
             </div>
@@ -246,7 +254,8 @@
                     </section>
                     <p class="quizDescrip">
                         The Brief Biology Quiz asks five high-school biology questions in the format of a scored single
-                        multiple-choice question and, on submission, the correct answer and possible added point.</p>
+                        multiple-choice question and, on submission, displays the correct answer and possible added
+                        point.</p>
                     <p class="quizDescrip">
                         At the appearance of the answer, the user is prompted to click for the next question and this
                         format
@@ -255,9 +264,10 @@
                         of questions, and offers a button to retry the quiz from the beginning.</p>
                 </section>
             </div>
+
             <div class="desktop containCont" id="Contact">
                 <h1> Contact Info</h1>
-                <ul class="desktop overall">
+                <ul class="desktop overall list">
                     <li><a href="mailto:dev.vanallen@gmail.com">dev.vanallen@gmail.com</a></li>
                     <li><a
                             href="https://www.linkedin.com/in/lauren-van-alllen/https://www.linkedin.com/in/lauren-van-alllen/">LinkedIn</a>
@@ -268,8 +278,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
 
+        </div>
     </div>
     <footer>
         <ul class="footDetails">

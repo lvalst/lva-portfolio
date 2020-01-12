@@ -1,22 +1,38 @@
 
-if (matchMedia) {
-    const mq = window.matchMedia("(min-width:540px)");
-    mq.addListener(WidthChange);
-    WidthChange(mq);
-}
-function WidthChange(mq) {
-    if (mq.matches) {
-      $(openTab);
-    } else {
-      $(accordian);
-    }
-}
+// if (matchMedia) {
+//     const mq = window.matchMedia("(min-width:540px)");
+//     mq.addListener(WidthChange);
+//     WidthChange(mq);
+// }
+// function WidthChange(mq) {
+//     if (mq.matches) {
+//       $(openTab);
+//     } else {
+//       $(accordian);
+//     }
+// }
+
+$(document).ready(function() {
+  // This will fire when document is ready:
+  $(window).resize(function() {
+      // This will fire each time the window is resized:
+      if($(window).width() >= 540) {
+          // if larger or equal
+          (openTab); 
+      } else {
+          // if smaller
+          $(accordian);
+      }
+  }).resize(); // This will simulate a resize to trigger the initial run.
+});
+
 function openTab(event, navName) {
+    document.getElementById('default').click();
     // Declare all variables
     var i, containCont, navLink;
     // Get all elements with class="containCont" and hide them
     containCont = document.getElementsByClassName("containCont");
-    for (i = 0; i < containCont.length; i++) {
+    for (i = 1; i < containCont.length; i++) {
       containCont[i].style.display = "none";
     }
     // Get all elements with class="navLink" and remove the class "active"

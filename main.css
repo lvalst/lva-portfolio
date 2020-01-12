@@ -6,21 +6,31 @@ html, body {
     font-size:20px;
     margin:0;
     padding:0;
+    color:rgb(61, 61, 61);
 }
 a {
     text-decoration: none;
     color:inherit;
 }
+a:hover {
+    color: rgb(81, 133, 57);
+}
 ul {
     list-style:none;
+    margin:0;
 }
 .content {
+    margin:0;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1rem;
+    min-height: 85vh;
+}
+.flex {
+    flex:1;
 }
 
 /* background image orientation */
@@ -47,16 +57,17 @@ div[role=header].container {
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    color:white;
     width:100%;
 }
-h1, ul>.container {
+.container h1 {
     background-color:rgb(61, 61, 61);
 }
+
 .container.navBar {
     width:100%;
     margin:0 auto;
     padding:0;
+    background-color:rgb(61, 61, 61);
 }
 li button {
     border: none;
@@ -64,7 +75,6 @@ li button {
     cursor: pointer;
     padding: 1.25rem 0;
     transition: 0.3s;
-    color:white;
     border-radius: 30px;
     margin:1rem 0;
   }
@@ -81,20 +91,21 @@ li button {
 .containCont {
     opacity: .85;
     margin: 0;
-    padding:2rem 2.5rem;
-    border-radius: 30px;
+    padding:10% 10%;
+    
 }
+.containCont a {
+    color:rgb(61, 61, 61);
+}
+
 .containCont p {
     text-align:left;
-    align-content: center;
 }
 
 /* end innercontent general */
 
 /* portfolio info section */
-.portContent {
-    background-color:yellow;
-    text-align:left;
+.portContent:not(p) {
     width:100%;
     margin:0;
     padding:0;
@@ -112,11 +123,9 @@ li button {
 .screenshot ul {
     padding:0;
     opacity:.8;
-    color:ivory;
     display:flex;
 }
 .screenshot ul li {
-    background-color:blue;
     margin:0 auto;
     padding: 0;
     text-align:center;
@@ -124,43 +133,37 @@ li button {
 h2 {
     padding:.25rem 0;
     margin:.25rem auto;
-    background-color:red;
 }
 
 .langSymbols ul{
-    width:100%;
+    width:80%;
     display:flex;
+    padding:0;
     margin: .5rem auto;
     align-items:center;
     justify-content:space-between;
 }
-.langSymbols ul li {
-    display:flex;
-}
+
 svg {
     width:1em;
     height:1em;
 }
 /* end portfolio */
 
-/* contact info section */
-#Contact h1 {
-    padding-bottom: .5rem;
-}
-.overall {
-    text-align: left;
-}
-.overall li {
-    margin-bottom: .5rem;
-} 
-/* end contact */
 
 /* footer */
 footer {
-    padding:0;
+    display:flex;
+    flex-direction: column;
+    align-content:center;
     text-align:center;
-    bottom:1rem;
+    width:100%;
+    margin:auto;
 } 
+.footDetails {
+    margin:0;
+    padding:0;
+}
 /* end footer */
 
 @media only screen and (min-width:200px) and (max-width:539px){
@@ -171,37 +174,36 @@ footer {
         display:initial;
         color:ivory;
         width:100%;
+        text-align:center;
     }
-    .innerContent {
-        margin:2rem 0;
-    }
-    .container h1 {
-        margin:0 0 -1.5rem;
+    
+   
+    .container .name {
         position: fixed; 
         left: 50%;
         margin-left: -50%;
-        padding:1.75rem 0;
+        margin-top:0;
         top: 0;
         z-index:1;
         border-radius: 0 0 12px 12px;
-        font-size: 1.8rem;
+        font-size: 1.5em;
+        padding:1.5rem 0;
     }
+   
     .container .navBar {
-        padding-top: 5rem;
+        padding-top: 4rem;
     }
     .container ul {
         text-align:center;
     }
     .accordian {
-        background-color:rgb(61, 61, 61);;
-        width:95%;
-        margin:1rem auto;
+        background-color:rgb(61, 61, 61);
+        width:97%;
+        margin:1rem auto 0;
         opacity: .9;
-        z-index:-1;
         border-radius: 30px;
-        font-size: 1.75rem;
+        font-size: 1.35em;
     }
-    
     .accordian:hover {
         opacity: 1;
     }
@@ -212,32 +214,58 @@ footer {
     }
 
     .containCont {
-        background-color:rgb(61, 61, 61);
-        width:90%;
-        margin:0 auto;
+        background-color:ivory;
+        width:92%;
+        margin:.5rem auto;
+        border-radius: 40px;
     }
-    .innercontent h1 {
-        font-size: 2.75rem;
+  
+    .innerContent h1 {
+        display:none;
+        font-size:1.3em;
+        margin:0 auto;
+        padding:0;
     }
     .innerContent h2 {
-        font-size: 1rem;
+        font-size: 1.25em;
     }
     .innerContent h3 {
-        font-size: 2rem;
+        font-size: 1.1em;
     }
     .innerContent p, section{
-        font-size: 1.3rem;
+        margin:0 auto;
+        padding:0;
+        font-size: 1em;
+        color:rgb(61, 61, 61);
     }
     p section>.containCont {
         text-align: left;
         margin:auto;
     }
-    
+    .quizDescrip {
+        text-align:left;
+    }
+    .quizDescrip p {
+        margin:0;
+        padding:0;
+    }
+
+   
     footer {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        width:100%;
+        margin:0;
+        padding:.5rem 0;
+        border-radius:12px 12px 0 0;
+        opacity:.9;
+        font-size: 1em;
+        color:ivory;
+        background-color:rgb(61, 61, 61);
     } 
 }
+/* end mobile design */
 
+/* begin desktop design */
 @media only screen and (min-width:540px){
     .mobile {
         display:none;
@@ -248,55 +276,70 @@ footer {
         margin:auto;
         padding:0;
     }
-    .desktop div[role=header] {
+    
+    div[role=header] {
         color:white;
         width:100%;
         background-color:rgb(61, 61, 61);
         opacity:.85;
         border-radius: 0 0 18px 18px;
+        margin-bottom:1rem;
+        padding:0;
     }
-    .desktop .container {
-        margin-bottom: 2rem;
-    }
-    .desktop .container h1 {
+    
+    .container h1 {
         margin:1rem auto 0;
-        font-size:2rem;
+        font-size:2em;
     }
-    .desktop .navBar ul {
-        display: flex;
-        justify-content: space-evenly;
-        margin-left:-1.25rem;
-        font-size:1.2rem;
+    .container .navBar {
+        margin:0;
+        padding:0;
     }
-    .desktop .container .navBar button:hover {
+    .navBar ul {
+        width:80%;
+        display:flex;
+        padding:0;
+        margin: .5rem auto;
+        align-items:center;
+        justify-content:space-between;
+    }
+    .navBar button {
+        font-size:1em;
+        padding:.25rem .35rem;
+        margin:auto;
+        background-color:inherit;
+        color:inherit;
+    }
+    .navBar button:hover {
         color: rgb(101, 216, 24);
         opacity: .8;
     } 
 
    
-    .desktop .innerContent h1 {
+    .innerContent h1 {
         font-size: 1.75em;
     }
-    .desktop .innerContent h2 {
+    .innerContent h2 {
         font-size: 1.35em;
     }
-    .desktop .innerContent p{
+    .innerContent p{
         font-size: 1em;
         text-align:left;
         padding-left:.2rem;
         padding-right:.2rem;
     }
-    .desktop .containCont {
+    .containCont {
         width:85%;
         background-color: ivory;
         opacity:.85;
         padding:1rem 1.5rem 2rem;
+        border-radius:30px;
     }
     .containCont p {
         padding-bottom: .5rem;
         margin:0;
     }
-    .desktop .ramble {
+    .ramble {
         margin: auto;
         opacity:.9;
     }
@@ -311,8 +354,12 @@ footer {
         align-content: center;
     }
    
-
+    .overall {
+        background-color:green;
+        color:red;
+    }
    footer {
         font-size: .95em;
+        margin-top:1rem;
     }
 }
