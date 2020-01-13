@@ -8,16 +8,19 @@ html, body {
     padding:0;
     color:rgb(61, 61, 61);
 }
+
 a {
     text-decoration: none;
     color:inherit;
 }
-a:hover {
-    color: rgb(81, 133, 57);
-}
+
 ul {
     list-style:none;
     margin:0;
+}
+.major {
+    position:relative;
+    min-height:100vh;
 }
 .content {
     margin:0;
@@ -26,20 +29,18 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1rem;
-    min-height: 85vh;
+    font-size: 1em;
+    padding-bottom: 4em;
 }
-.flex {
-    flex:1;
-}
+
 
 /* background image orientation */
 .background img{
     position:fixed;
     right:0;
     bottom:0;
-    min-width:100%;
-    min-height:100%;
+    max-width:100%;
+    min-height:100vh;
     z-index: -999;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,13 +90,14 @@ li button {
     padding:0;
 }
 .containCont {
-    opacity: .85;
-    margin: 0;
-    padding:10% 10%;
-    
+    margin:.5rem auto; 
+    padding:1.75rem 2rem;
 }
 .containCont a {
     color:rgb(61, 61, 61);
+}
+.containCont a:hover {
+    color: rgb(194, 50, 31);
 }
 
 .containCont p {
@@ -113,16 +115,19 @@ li button {
     flex-direction:column;
     align-items:center;
 }
-.screenshot {
-    margin-bottom:0;
+h2 {
+    padding:.25rem 0;
+    margin:.25rem auto;
 }
 .screenshot img {
     padding:.5rem 0;
     margin:0 auto;
+    max-width:100%;
+    max-height:50%;
+    box-shadow:0px 0px 4px 3px rgb(1, 1, 1, .4);
 }
 .screenshot ul {
     padding:0;
-    opacity:.8;
     display:flex;
 }
 .screenshot ul li {
@@ -130,11 +135,11 @@ li button {
     padding: 0;
     text-align:center;
 }
-h2 {
-    padding:.25rem 0;
-    margin:.25rem auto;
+.portlink {
+    padding:0;
+    margin:0 auto .5rem;
+    font-size:1.1em;
 }
-
 .langSymbols ul{
     width:80%;
     display:flex;
@@ -143,10 +148,12 @@ h2 {
     align-items:center;
     justify-content:space-between;
 }
-
 svg {
-    width:1em;
-    height:1em;
+    width:1.1em;
+    height:1.1em;
+}
+.quizDescrip p{
+    margin: .25em 0;
 }
 /* end portfolio */
 
@@ -158,8 +165,13 @@ footer {
     align-content:center;
     text-align:center;
     width:100%;
-    margin:auto;
+    max-height: 4em;
+    margin:0 auto;
+    padding:.25rem 0;
+    font-size: 1em;
+    color:ivory;
 } 
+
 .footDetails {
     margin:0;
     padding:0;
@@ -176,7 +188,6 @@ footer {
         width:100%;
         text-align:center;
     }
-    
    
     .container .name {
         position: fixed; 
@@ -197,15 +208,14 @@ footer {
         text-align:center;
     }
     .accordian {
-        background-color:rgb(61, 61, 61);
+        background-color:rgb(61, 61, 61, .9);
         width:97%;
         margin:1rem auto 0;
-        opacity: .9;
         border-radius: 30px;
         font-size: 1.35em;
     }
     .accordian:hover {
-        opacity: 1;
+        background-color:rgb(61, 61, 61, 1);
     }
     .panel {
         display:none;
@@ -216,7 +226,6 @@ footer {
     .containCont {
         background-color:ivory;
         width:92%;
-        margin:.5rem auto;
         border-radius: 40px;
     }
   
@@ -228,12 +237,13 @@ footer {
     }
     .innerContent h2 {
         font-size: 1.25em;
+        color: rgb(61, 61, 61);
     }
     .innerContent h3 {
         font-size: 1.1em;
     }
     .innerContent p, section{
-        margin:0 auto;
+        margin:0 auto .3rem;
         padding:0;
         font-size: 1em;
         color:rgb(61, 61, 61);
@@ -242,26 +252,12 @@ footer {
         text-align: left;
         margin:auto;
     }
-    .quizDescrip {
-        text-align:left;
-    }
-    .quizDescrip p {
-        margin:0;
-        padding:0;
-    }
+    
 
-   
     footer {
-        font-size: 1rem;
-        width:100%;
-        margin:0;
-        padding:.5rem 0;
-        border-radius:12px 12px 0 0;
-        opacity:.9;
-        font-size: 1em;
-        color:ivory;
-        background-color:rgb(61, 61, 61);
-    } 
+        background-color:rgb(10, 10, 10, .3);
+        box-shadow:0px 0px 5px rgb(12, 12, 12, .3);
+    }
 }
 /* end mobile design */
 
@@ -276,18 +272,19 @@ footer {
         margin:auto;
         padding:0;
     }
+   
     
     div[role=header] {
         color:white;
         width:100%;
-        background-color:rgb(61, 61, 61);
-        opacity:.85;
+        background-color:rgb(61, 61, 61, .85);
         border-radius: 0 0 18px 18px;
         margin-bottom:1rem;
         padding:0;
     }
     
     .container h1 {
+        background-color:rgb(61, 61, 61, .001);
         margin:1rem auto 0;
         font-size:2em;
     }
@@ -304,24 +301,16 @@ footer {
         justify-content:space-between;
     }
     .navBar button {
-        font-size:1em;
+        font-size:1.2em;
         padding:.25rem .35rem;
         margin:auto;
         background-color:inherit;
         color:inherit;
     }
     .navBar button:hover {
-        color: rgb(101, 216, 24);
-        opacity: .8;
+        color: rgb(194, 50, 31);
     } 
-
    
-    .innerContent h1 {
-        font-size: 1.75em;
-    }
-    .innerContent h2 {
-        font-size: 1.35em;
-    }
     .innerContent p{
         font-size: 1em;
         text-align:left;
@@ -330,10 +319,16 @@ footer {
     }
     .containCont {
         width:85%;
-        background-color: ivory;
-        opacity:.85;
-        padding:1rem 1.5rem 2rem;
+        background-color: rgba(255, 255, 240, 0.85);
         border-radius:30px;
+        padding:1.25rem 2rem 1.75rem;
+    }
+    .containCont h1 {
+        font-size: 1.55em;
+    }
+    .containCont h2 {
+        font-size: 1.35em;
+        margin: 1rem auto;
     }
     .containCont p {
         padding-bottom: .5rem;
@@ -341,7 +336,6 @@ footer {
     }
     .ramble {
         margin: auto;
-        opacity:.9;
     }
     pre {
         margin:-.25rem 1rem -.3rem;
@@ -353,13 +347,31 @@ footer {
         flex-direction:column;
         align-content: center;
     }
-   
-    .overall {
-        background-color:green;
-        color:red;
+
+    .screenshot img {
+        padding:.5rem 0;
+        margin:0 auto;
+        max-width:80%;
+        max-height:40%;
     }
+    .langSymbols {
+        width:70%;
+        margin:.4rem auto;
+        padding:0;
+    }
+    svg {
+        width:1.25em;
+        height:1.25em;
+    }
+    .portlink {
+        text-align:center;
+        margin:0 0 .4rem;
+    }
+
    footer {
+        width:50%;
         font-size: .95em;
-        margin-top:1rem;
+        margin:1.5rem auto;
+        text-emphasis: bold;
     }
 }

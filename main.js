@@ -14,8 +14,6 @@ $(document).ready(function() {
 });
 
 function openTab(event, navName) {
-    //opens About as tab when page >540 px loads
-    document.getElementById('default').click();
     // Declare all variables
     var i, containCont, navLink;
     // Get all elements with class="containCont" and hide them
