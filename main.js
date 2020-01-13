@@ -1,17 +1,16 @@
 
-$(document).ready(function() {
-  // This will fire when document is ready:
-  $(window).resize(function() {
-      // This will fire each time the window is resized:
-      if($(window).width() >= 540) {
-          // if larger or equal
-          (openTab); 
-      } else {
-          // if smaller
-          $(accordian);
-      }
-  }).resize(); // This will simulate a resize to trigger the initial run.
-});
+if (matchMedia) {	
+    const mq = window.matchMedia("(min-width:540px)");	
+    mq.addListener(WidthChange);	
+    WidthChange(mq);	
+}	
+function WidthChange(mq) {	
+    if (mq.matches) {	
+      (openTab);	
+    } else {	
+      $(accordian);	
+    }	
+};
 
 function openTab(event, navName) {
     // Declare all variables
