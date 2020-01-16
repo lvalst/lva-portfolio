@@ -157,7 +157,14 @@ svg {
 }
 /* end portfolio */
 
-
+/* begin contact */
+.overall img {
+    height:1.2em;
+    width:1.2em;
+    margin: .2rem .5rem .2rem 0;
+    margin-right: .5rem;
+}
+/* end contact */
 /* footer */
 footer {
     display:flex;
