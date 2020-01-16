@@ -158,11 +158,11 @@ svg {
 /* end portfolio */
 
 /* begin contact */
+
 .overall img {
-    height:1.2em;
-    width:1.2em;
-    margin: .2rem .5rem .2rem 0;
-    margin-right: .5rem;
+    max-width:1.2em;
+    margin: .25rem .5rem;
+    vertical-align: -35%;
 }
 /* end contact */
 /* footer */
@@ -260,6 +260,13 @@ footer {
         margin:auto;
     }
     
+    
+    .overall {
+        margin:0 auto;
+        padding:0;
+        width:100%;
+    }
+
 
     footer {
         background-color:rgb(10, 10, 10, .3);
@@ -280,7 +287,6 @@ footer {
         padding:0;
     }
    
-    
     div[role=header] {
         color:white;
         width:100%;
@@ -373,6 +379,10 @@ footer {
     .portlink {
         text-align:center;
         margin:0 0 .4rem;
+    }
+
+    .overall h1 {
+        /* padding-bottom: -1rem; */
     }
 
    footer {
