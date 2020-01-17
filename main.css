@@ -13,8 +13,8 @@ a {
     text-decoration: none;
     color:inherit;
 }
-a:hover {
-    color:rgb(194, 50, 31)
+body a:hover {
+    color:rgb(194, 50, 31);
 }
 
 ul {
@@ -54,6 +54,7 @@ ul {
 div[role=header] {
     width:100%;
     z-index:1;
+    color: rgb(252, 252, 248);
 }
 div[role=header].container {
     display:flex;
@@ -98,6 +99,7 @@ li button {
     padding:1.75rem 2rem;
     background-color: rgb(252, 252, 248, .85);
     width:80%;
+    box-shadow:1px 1px 2px 1px rgb(12, 12, 12, .25);
 }
 .containCont a {
     color:rgb(61, 61, 61);
@@ -117,7 +119,9 @@ li button {
     flex-direction:column;
     align-items:center;
 }
-.portContent h2 {
+.projectTitle {
+    color: rgb(79, 60, 56);
+    font-weight: bolder;
     padding:.25rem 0;
     margin:.25rem auto;
 }
@@ -178,7 +182,9 @@ footer {
     margin:0 auto;
     padding:.25rem 0;
     font-size: 1em;
-    color:ivory;
+    color:rgb(252, 252, 248);
+    font-weight: bolder;
+    text-shadow: 1px 1px 4px rgb(12, 12, 12, .3);
 } 
 
 .footDetails {
@@ -193,7 +199,6 @@ footer {
     }
     .mobile {
         display:initial;
-        color: rgb(252, 252, 248);
         width:100%;
         text-align:center;
     }
@@ -209,6 +214,8 @@ footer {
         z-index:1;
         border-radius: 0 0 12px 12px;
         padding: .75rem 0;
+        text-shadow: 1px 1px 4px rgb(12, 12, 12, .3);
+        box-shadow: 1px 1px 2px .5px rgb(12, 12, 12, .3);
     }
     .fixed h1 {
         font-size:1.5em; 
@@ -233,6 +240,9 @@ footer {
         margin:1.75rem auto 0;
         border-radius: 30px;
         font-size: 1.35em;
+        color: rgb(252, 252, 248);
+        text-shadow: 1px 1px 4px rgb(12, 12, 12, .3);
+        box-shadow: 1px 1px 2px 1px rgb(12, 12, 12, .3);
     }
     .accordian:hover {
         background-color:rgb(61, 61, 61);
@@ -248,7 +258,7 @@ footer {
         border-radius: 40px;
     }
   
-    .innerContent h2 {
+    .containCont h2 {
         font-size: 1.25em;
         color: rgb(61, 61, 61);
     }
@@ -267,6 +277,9 @@ footer {
         padding:0;
         margin:0;
     }
+    footer {
+        font-weight:bold;
+    }
 }
 /* end mobile design */
 
@@ -283,13 +296,12 @@ footer {
     }
    
     div[role=header] {
-        color:white;
         width:100%;
         margin:0 auto 1rem;
         padding:0;
         background-color:rgb(61, 61, 61, .90);
         border-radius: 0 0 10px 10px;
-        box-shadow:0px 0px 2px 2px rgb(12, 12, 12, .5), 0px 0px 4px 3px rgb(12, 12, 12, .3);
+        box-shadow:0px 0px 4px 2px rgb(12, 12, 12, .4);
     }
 
     .title {
@@ -298,7 +310,7 @@ footer {
         width:100%;
         margin:0 auto;
         padding:.5rem 0;
-        text-shadow:1px 1px 5px rgb(12, 12, 12, .95);
+        text-shadow:1px 1px 3px rgb(12, 12, 12, .95);
     }
     .title h1 {
         font-size:1.4em;
@@ -307,6 +319,7 @@ footer {
         margin:0 auto;
         padding: 0 .75em;
         font-weight: bolder;
+        vertical-align: text-bottom;
     }
     .container .navBar {
         margin:0 auto;
@@ -326,7 +339,7 @@ footer {
         padding:.25rem 1rem;
         background-color:inherit;
         color: rgb(252, 252, 248);
-        text-shadow:1px 1px 5px rgb(12, 12, 12, .95);
+        text-shadow:1px 1px 4px rgb(12, 12, 12, .95);
     }
     .navBar button:hover {
         color: rgb(194, 50, 31);
@@ -349,7 +362,7 @@ footer {
         font-weight: lighter;
     }
     .containCont h2 {
-        font-size: 1.25em;
+        font-size: 1.15em;
         margin: 0 auto 1rem;
     }
     .containCont p {
@@ -371,10 +384,6 @@ footer {
         align-content: center;
     }
     
-    .projectTitle {
-        color: rgb(79, 60, 56);
-        font-weight: bolder;
-    }
     .screenshot img {
         padding:.5rem 0;
         margin:0 auto;
@@ -399,6 +408,11 @@ footer {
     }
     .quizDescrip {
         width: 95%;
+    }
+    #Contact {
+        margin:2rem auto 0;
+        padding:1rem 0 1.75rem;
+        width:70%;
     }
 
    footer {
