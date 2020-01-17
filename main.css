@@ -13,6 +13,9 @@ a {
     text-decoration: none;
     color:inherit;
 }
+a:hover {
+    color:rgb(194, 50, 31)
+}
 
 ul {
     list-style:none;
@@ -30,7 +33,6 @@ ul {
     align-items: center;
     text-align: center;
     font-size: 1em;
-    padding-bottom: 4em;
 }
 
 
@@ -60,10 +62,12 @@ div[role=header].container {
     align-items: center;
     width:100%;
 }
-.container h1 {
+.container .fixed {
     background-color:rgb(61, 61, 61);
 }
-
+.container h2 {
+    font-weight: lighter;
+}
 .container.navBar {
     width:100%;
     margin:0 auto;
@@ -92,14 +96,12 @@ li button {
 .containCont {
     margin:.5rem auto; 
     padding:1.75rem 2rem;
+    background-color: rgb(252, 252, 248, .85);
+    width:80%;
 }
 .containCont a {
     color:rgb(61, 61, 61);
 }
-.containCont a:hover {
-    color: rgb(194, 50, 31);
-}
-
 .containCont p {
     text-align:left;
 }
@@ -115,7 +117,7 @@ li button {
     flex-direction:column;
     align-items:center;
 }
-h2 {
+.portContent h2 {
     padding:.25rem 0;
     margin:.25rem auto;
 }
@@ -161,7 +163,7 @@ svg {
 
 .overall img {
     max-width:1.2em;
-    margin: .25rem .5rem;
+    margin: .25rem .5rem .25rem 0;
     vertical-align: -35%;
 }
 /* end contact */
@@ -172,7 +174,7 @@ footer {
     align-content:center;
     text-align:center;
     width:100%;
-    max-height: 4em;
+    max-height: 5em;
     margin:0 auto;
     padding:.25rem 0;
     font-size: 1em;
@@ -191,12 +193,14 @@ footer {
     }
     .mobile {
         display:initial;
-        color:ivory;
+        color: rgb(252, 252, 248);
         width:100%;
         text-align:center;
     }
    
-    .container .name {
+    .container .fixed{
+        display: flex;
+        flex-direction: column;
         position: fixed; 
         left: 50%;
         margin-left: -50%;
@@ -204,25 +208,34 @@ footer {
         top: 0;
         z-index:1;
         border-radius: 0 0 12px 12px;
-        font-size: 1.5em;
-        padding:1.5rem 0;
+        padding: .75rem 0;
+    }
+    .fixed h1 {
+        font-size:1.5em; 
+        margin: 0 auto;
+    }
+    .fixed h2 {
+        font-size: 1.15em;
+        font-weight: lighter;
+        margin:.4em auto;
     }
    
-    .container .navBar {
+    .navBar {
         padding-top: 4rem;
+        margin: 1.2rem 0;
     }
-    .container ul {
+    .navBar ul {
         text-align:center;
     }
     .accordian {
         background-color:rgb(61, 61, 61, .9);
         width:97%;
-        margin:1rem auto 0;
+        margin:1.75rem auto 0;
         border-radius: 30px;
         font-size: 1.35em;
     }
     .accordian:hover {
-        background-color:rgb(61, 61, 61, 1);
+        background-color:rgb(61, 61, 61);
     }
     .panel {
         display:none;
@@ -231,23 +244,13 @@ footer {
     }
 
     .containCont {
-        background-color:ivory;
         width:92%;
         border-radius: 40px;
     }
   
-    .innerContent h1 {
-        display:none;
-        font-size:1.3em;
-        margin:0 auto;
-        padding:0;
-    }
     .innerContent h2 {
         font-size: 1.25em;
         color: rgb(61, 61, 61);
-    }
-    .innerContent h3 {
-        font-size: 1.1em;
     }
     .innerContent p, section{
         margin:0 auto .3rem;
@@ -260,17 +263,9 @@ footer {
         margin:auto;
     }
     
-    
     .overall {
-        margin:0 auto;
         padding:0;
-        width:100%;
-    }
-
-
-    footer {
-        background-color:rgb(10, 10, 10, .3);
-        box-shadow:0px 0px 5px rgb(12, 12, 12, .3);
+        margin:0;
     }
 }
 /* end mobile design */
@@ -290,35 +285,48 @@ footer {
     div[role=header] {
         color:white;
         width:100%;
-        background-color:rgb(61, 61, 61, .85);
-        border-radius: 0 0 18px 18px;
-        margin-bottom:1rem;
+        margin:0 auto 1rem;
         padding:0;
+        background-color:rgb(61, 61, 61, .90);
+        border-radius: 0 0 10px 10px;
+        box-shadow:0px 0px 2px 2px rgb(12, 12, 12, .5), 0px 0px 4px 3px rgb(12, 12, 12, .3);
     }
-    
-    .container h1 {
-        background-color:rgb(61, 61, 61, .001);
-        margin:1rem auto 0;
-        font-size:2em;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        margin:0 auto;
+        padding:.5rem 0;
+        text-shadow:1px 1px 5px rgb(12, 12, 12, .95);
+    }
+    .title h1 {
+        font-size:1.4em;
+    }
+    .title span {
+        margin:0 auto;
+        padding: 0 .75em;
+        font-weight: bolder;
     }
     .container .navBar {
-        margin:0;
-        padding:0;
+        margin:0 auto;
+        padding:.25rem 0;
     }
     .navBar ul {
-        width:80%;
+        width:85%;
         display:flex;
-        padding:0;
-        margin: .5rem auto;
+        padding: 0;
+        margin: 0 auto;
         align-items:center;
         justify-content:space-between;
+        font-weight: bolder;
     }
     .navBar button {
-        font-size:1.2em;
-        padding:.25rem .35rem;
-        margin:auto;
+        font-size:1em;
+        padding:.25rem 1rem;
         background-color:inherit;
-        color:inherit;
+        color: rgb(252, 252, 248);
+        text-shadow:1px 1px 5px rgb(12, 12, 12, .95);
     }
     .navBar button:hover {
         color: rgb(194, 50, 31);
@@ -331,22 +339,24 @@ footer {
         padding-right:.2rem;
     }
     .containCont {
-        width:85%;
-        background-color: rgba(255, 255, 240, 0.85);
+        width:80%;
         border-radius:30px;
-        padding:1.25rem 2rem 1.75rem;
+        margin: 2rem auto;
+        padding:2rem 2rem 4rem;
     }
     .containCont h1 {
-        font-size: 1.55em;
+        font-size: 1.35em;
+        font-weight: lighter;
     }
     .containCont h2 {
-        font-size: 1.35em;
-        margin: 1rem auto;
+        font-size: 1.25em;
+        margin: 0 auto 1rem;
     }
     .containCont p {
         padding-bottom: .5rem;
-        margin:0;
+        margin:0 auto;
     }
+
     .ramble {
         margin: auto;
     }
@@ -360,35 +370,41 @@ footer {
         flex-direction:column;
         align-content: center;
     }
-
+    
+    .projectTitle {
+        color: rgb(79, 60, 56);
+        font-weight: bolder;
+    }
     .screenshot img {
         padding:.5rem 0;
         margin:0 auto;
-        max-width:80%;
-        max-height:40%;
+        max-width:75%;
     }
     .langSymbols {
-        width:70%;
+        width:60%;
         margin:.4rem auto;
         padding:0;
     }
     svg {
-        width:1.25em;
-        height:1.25em;
+        width:1.35em;
+        height:1.35em;
     }
     .portlink {
+        display: flex;
         text-align:center;
-        margin:0 0 .4rem;
+        width:85%;
+        padding:0;
+        margin:0 auto .75rem;
+        font-weight:bolder;
     }
-
-    .overall h1 {
-        /* padding-bottom: -1rem; */
+    .quizDescrip {
+        width: 95%;
     }
 
    footer {
         width:50%;
         font-size: .95em;
-        margin:1.5rem auto;
+        margin: 0 auto 1.5rem;
         text-emphasis: bold;
     }
 }

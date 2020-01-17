@@ -45,4 +45,5 @@ function openTab(event, navName) {
       });
     };
   }
+$(widthChange);
  
